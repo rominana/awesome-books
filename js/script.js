@@ -78,16 +78,10 @@ class StorageBooks {
   static removeLiElement(id) {
     const li = document.getElementById(`book${id}`);
     li.remove();
-    bookData = bookData.filter((book) => book.id !== id); // filter method
+    bookData = bookData.filter((book) => book.id !== id); // filter method required
     StorageBooks.storeData();
   }
 }
 
 document.addEventListener('DOMContentLoaded', StorageBooks.loadData);
 addBook.addEventListener('click', StorageBooks.addLiElement);
-
-/*
-Activate and Deactivate Sections
-*/
-
-// agregar hide-class al contact section

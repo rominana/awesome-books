@@ -5,7 +5,8 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 1rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
 }
 
 li {
@@ -149,4 +150,3 @@ footer {
   flex-direction: column;
   gap: 1rem;
 }
-
