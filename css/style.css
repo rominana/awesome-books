@@ -126,8 +126,12 @@ nav > ul {
   list-style: none;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  margin-left: ;
+  /* justify-content: space-between; */
   padding: 1rem;
+  align-items: center;
+  margin-left: 150px;
+  gap: 80px;
   align-items: center;
 }
 
