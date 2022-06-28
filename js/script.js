@@ -15,13 +15,14 @@ const contactLink = document.getElementById('contact-link');
 let bookData;
 
 class Book {
-  constructor(title = 'New Book', author = 'John Doe', id) {
+  constructor(title = 'nuevo libro', author = 'Shakespeare', id) {
     this.title = title;
     this.author = author;
     this.id = id;
   }
 }
 
+//Create a collection that keeps a list of books 
 function getBookInfo(title, author, id) {
   // create a section dinamically div, li and remove button
   const div = document.createElement('div');
@@ -45,6 +46,7 @@ function getBookInfo(title, author, id) {
 
   return li;
 }
+
 
 class StorageBooks {
 // storage the data in the local store

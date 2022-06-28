@@ -69,11 +69,11 @@ nav > ul {
   gap: 1.5rem;
 }
 
-footer {
+/* footer {
   width: 96%;
   padding: 1rem;
   margin: 0 auto 1rem;
-}
+} */
 
 .remove {
   align-self: flex-end;
@@ -109,6 +109,12 @@ footer {
   transition-duration: 0.1s;
 }
 
+#add-book:active {
+  transform: translate(5px, 5px);
+  box-shadow: none;
+  background-color: rgb(156, 147, 147);
+}
+
 #all-books {
   border-width: 2px;
   border-color: black;
@@ -126,7 +132,7 @@ footer {
 }
 
 #book-list li:nth-child(2n) {
-  background-color: #fff;
+  background-color: 	rgb(211,211,211);
 }
 
 #contact {
