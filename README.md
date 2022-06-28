@@ -12,11 +12,11 @@
 
 ## Authors
 
-👤 **Author1**
+👤 **Romina Patiño**
 
 - GitHub: [@rominana](https://github.com/rominana)
 
-👤 **Author2**
+👤 **Rodrigo Johann Reckziegel Nunes**
 
 - GitHub: [@hannziegel](https://github.com/hannziegel)
 

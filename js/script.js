@@ -29,12 +29,13 @@ function getBookInfo(title, author, id) {
   li.classList.add('book');
   li.setAttribute('id', `book${id}`);
 
+  // Add content to elements
   divTitle.innerHTML = title;
   divAuthor.innerHTML = author;
   removeButton.innerText = 'Remove';
   removeButton.type = 'button';
 
-  // append elements
+  // Append elements
   li.appendChild(divTitle);
   li.appendChild(divAuthor);
   li.appendChild(removeButton);
@@ -42,12 +43,12 @@ function getBookInfo(title, author, id) {
   return li;
 }
 
-// storage data in the browser
+// Storage data in the browser
 function storeData() {
   localStorage.setItem('bookData', JSON.stringify(bookData));
 }
 
-// load data in the browser
+// Load data in the browser
 function loadData() {
   const data = localStorage.getItem('bookData');
   if (data) {
@@ -63,7 +64,7 @@ loadData();
 // Add element from list
 addBook.addEventListener('click', () => {
   if (newTitle.value && newAuthor.value) {
-    // create an id to the elements :D
+    // Create an id to the elements
     const id = bookData[bookData.length - 1] ? bookData[bookData.length - 1].id + 1 : 1;
     const book = new Book(newTitle.value, newAuthor.value, id);
     bookData.push(book);
@@ -72,16 +73,15 @@ addBook.addEventListener('click', () => {
   }
 });
 
-// remove element from list of books
+// Remove element from list of books
 function removeListElement(id) {
-  // console.log('click');
   const li = document.getElementById(`book${id}`);
-  li.remove();
+  // Remove element from the array
   bookData = bookData.filter((book) => book.id !== id);
+  // Remove element from the html
+  li.remove();
+  // Store array withot the element on the browser
   storeData();
-  // console.log(li);
-  // console.log(bookData);
 }
-// console.log(bookData);
 
 removeListElement(0);
