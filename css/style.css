@@ -110,8 +110,6 @@ nav > ul {
 }
 
 #add-book:active {
-  transform: translate(5px, 5px);
-  box-shadow: none;
   background-color: rgb(156, 147, 147);
 }
 
@@ -126,17 +124,15 @@ nav > ul {
   list-style: none;
   width: 100%;
   display: flex;
-  margin-left: ;
-  /* justify-content: space-between; */
   padding: 1rem;
-  align-items: center;
-  margin-left: 150px;
   gap: 80px;
-  align-items: center;
+  max-width: 50%;
+  margin: 0 auto;
+  justify-content:center;
 }
 
 #book-list li:nth-child(2n) {
-  background-color: 	rgb(211,211,211);
+  background-color: rgb(211, 211, 211);
 }
 
 #contact {
