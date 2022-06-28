@@ -61,10 +61,9 @@ function loadData() {
 loadData();
 
 // Add element from list
-
 addBook.addEventListener('click', () => {
   if (newTitle.value && newAuthor.value) {
-    // create an id to the elements
+    // create an id to the elements :D
     const id = bookData[bookData.length - 1] ? bookData[bookData.length - 1].id + 1 : 1;
     const book = new Book(newTitle.value, newAuthor.value, id);
     bookData.push(book);
@@ -76,6 +75,7 @@ addBook.addEventListener('click', () => {
 // remove element from list of books
 function removeListElement(id) {
   const li = document.getElementById(`book${id}`);
+  li.remove();
   bookData = bookData.filter((book) => book.id !== id);
   storeData();
 }

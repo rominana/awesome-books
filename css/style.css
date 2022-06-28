@@ -69,21 +69,11 @@ nav > ul {
   gap: 1.5rem;
 }
 
-/* footer {
-  width: 96%;
-  padding: 1rem;
-  margin: 0 auto 1rem;
-} */
-
 .remove {
   align-self: flex-end;
   appearance: none;
   padding: 0.5rem;
   transition-duration: 0.1s;
-}
-
-.container {
-  /* display: inline-block; */
 }
 
 #new-book {
@@ -128,11 +118,7 @@ nav > ul {
   gap: 80px;
   max-width: 50%;
   margin: 0 auto;
-  justify-content:center;
-}
-
-#book-list li:nth-child(2n) {
-  background-color: rgb(211, 211, 211);
+  justify-content: center;
 }
 
 #contact {
