@@ -74,10 +74,14 @@ addBook.addEventListener('click', () => {
 
 // remove element from list of books
 function removeListElement(id) {
+  // console.log('click');
   const li = document.getElementById(`book${id}`);
   li.remove();
   bookData = bookData.filter((book) => book.id !== id);
   storeData();
+  // console.log(li);
+  // console.log(bookData);
 }
+// console.log(bookData);
 
 removeListElement(0);
