@@ -59,5 +59,3 @@ function loadData() {
 }
 
 loadData();
-
-////add element from list
