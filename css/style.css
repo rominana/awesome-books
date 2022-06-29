@@ -76,10 +76,9 @@ nav > ul {
   gap: 1.5rem;
 }
 
-/* .hide {
-  display: none;
-  visibility: hidden;
-} */
+nav li {
+  cursor: pointer;
+}
 
 .remove {
   align-self: flex-end;
@@ -98,6 +97,16 @@ nav > ul {
   transform: translate(5px, 5px);
   box-shadow: none;
   background-color: rgb(156, 147, 147);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
 }
 
 #new-book {
@@ -162,11 +171,6 @@ nav > ul {
 
 #book-list :nth-child(even) {
   background-color: white;
-}
-
-#contact {
-  display: flex;
-  flex-direction: column;
 }
 
 #contact > * {
