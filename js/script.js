@@ -78,5 +78,30 @@ class StorageBooks {
   }
 }
 
+// add current date
+document.getElementById('date').innerHTML = Date();
+
 document.addEventListener('DOMContentLoaded', StorageBooks.loadData);
 addBook.addEventListener('click', StorageBooks.addLiElement);
+
+// Activate and desactivate sections
+
+listLink.addEventListener('click', () => {
+  allBooksSection.classList.remove('hide');
+  addNewBookSection.classList.add('hide');
+  contactSection.classList.add('hide');
+});
+
+// addLink
+addLink.addEventListener('click', () => {
+  allBooksSection.classList.add('hide');
+  addNewBookSection.classList.remove('hide');
+  contactSection.classList.add('hide');
+});
+
+// contactLink
+contactLink.addEventListener('click', () => {
+  allBooksSection.classList.add('hide');
+  addNewBookSection.classList.add('hide');
+  contactSection.classList.remove('hide');
+});
