@@ -2,7 +2,8 @@
 
 # Awesome books: plain JavaScript with objects
 
-> Basic website that allows users to add/remove books from a list using Javascript.
+awesomebooks-class-refactore
+> Basic website that allows users to add/remove books from a list using Javascript using classes.
 
 ## Built With
 
