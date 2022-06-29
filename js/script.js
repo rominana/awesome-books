@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable max-classes-per-file */
 const bookList = document.getElementById('book-list');
 const addBook = document.getElementById('add-book');
@@ -59,20 +60,23 @@ class StorageBooks {
     }
   }
 
-//   static removeListElement(id){
+  static addLiElement() {
+    if (newTitle.value && newAuthor.value) {
+      const id = bookData[bookData.length - 1] ? bookData[bookData.length - 1].id + 1 : 1;
+      const book = new Book(newTitle.value, newAuthor.value, id);
+      bookData.push(book);
+      bookList.appendChild(getBookInfo(book.title, book.author, book.id));
+      StorageBooks.storeData();
+    }
+  }
 
-//     const li = document.getElementById(`book${id}`);
-
-
-//   }
-
-//   static addLiElement(){
-
-//     const id = bookData[bookData.length - 1] ? bookData[bookData.length - 1].id + 1 : 1;
-
-//   }
-
-// }
+  static removeListElement(id) {
+    const li = document.getElementById(`book${id}`);
+    li.remove();
+    bookData = bookData.filter((book) => book.id !== id);
+    StorageBooks.storeData();
+  }
+}
 
 document.addEventListener('DOMContentLoaded', StorageBooks.loadData);
-// addBook.addEventListener('click', StorageBooks.addLiElement);
+addBook.addEventListener('click', StorageBooks.addLiElement);
