@@ -78,5 +78,13 @@ class StorageBooks {
   }
 }
 
+// add current date
+document.getElementById('date').innerHTML = Date();
+
 document.addEventListener('DOMContentLoaded', StorageBooks.loadData);
 addBook.addEventListener('click', StorageBooks.addLiElement);
+
+// Activate and desactivate sections
+
+// allBooksSection.classList.add('show-section');
+// allBooksSection.classList.remove('hise-class');

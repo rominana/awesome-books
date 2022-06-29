@@ -18,17 +18,19 @@
 
   <body>
     <!--NAVIGATION BAR-->
-    <nav class="hide">
+    <nav>
       <a href="index.html"> <h1>Awesome Books</h1> </a>
       <ul>
-        <li><a href="#" id="list-link">List</a></li>
-        <li><a href="#" id="add-link">Add</a></li>
-        <li><a href="#" id="contact-link">Contact</a></li>
+        <li><a href="#all-books" id="list-link">List</a></li>
+        <li><a href="#add-new-book" id="add-link">Add</a></li>
+        <li><a href="#contact" id="contact-link">Contact</a></li>
       </ul>
     </nav>
+    <div id="date"></div>
     <!--CONTAINER SECTION-->
     <div id="container">
       <!--ALL BOOKS SECTION-->
+      
       <section id="all-books">
         <h2>All Awesome Books</h2>
         <ul id="book-list">
@@ -36,21 +38,31 @@
         </ul>
       </section>
       <!--ADD NEW BOOK SECTION-->
+
+
       <section id="add-new-book">
         <hr />
         <h2>Add a new book</h2>
         <fieldset id="new-book">
           <input type="text" name="title" id="new-title" placeholder="Title" />
-          <input
-            type="text"
-            name="author"
-            id="new-author"
-            placeholder="Author"
-          />
+          <input type="text" name="author" id="new-author" placeholder="Author" />
           <div><button type="button" id="add-book">Add book</button></div>
         </fieldset>
       </section>
-      <!-- CONTACT SECTION -->
+
+      <section id="contact">
+        <h2>Contact Information</h2>
+        <p>Do you have any questions or just want to say "Hello"? You can reach out to us!</p>
+        <ul>
+          <li>Our email <a href="mailto:mail@mail.com">mail@mail.com</a>.</li>
+          <li>Our phone number <a href="tel:+18001234567">+1 800 1234567</a>.</li>
+          <li>Our address: Main St 1234, 54321 City, Country.</li>
+        </ul>
+      </section>
     </div>
+
+    <footer>
+      <p>&copy;Copyright 2022. All rights reserved.</p>
+    </footer>
   </body>
 </html>
