@@ -100,8 +100,8 @@ addLink.addEventListener('click', () => {
 });
 
 // contactLink
-contactLink.addEventListener('click', ()=> {
+contactLink.addEventListener('click', () => {
   allBooksSection.classList.add('hide');
   addNewBookSection.classList.add('hide');
-  contactSection.classList.remove('hide'); 
-})
+  contactSection.classList.remove('hide');
+});
